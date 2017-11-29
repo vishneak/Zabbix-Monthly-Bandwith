@@ -1,5 +1,5 @@
-# Zabbix-Monthly-Bandwith
-In this repository you will find information that will help you to set up Zabbix Server to collect information regarding Monthly Bandwith from your Zabbix Host whith vnstat (it was tested on Ubuntu 12, 14 and 16).
+# Zabbix-Monthly-Bandwidth
+In this repository you will find information that will help you to set up Zabbix Server to collect information regarding Monthly Bandwidth from your Zabbix Host whith vnstat (it was tested on Ubuntu 12, 14 and 16).
 
 # Zabbix Host modifications
 1) On the Zabbix Host install vnstat and bc packages
@@ -33,7 +33,7 @@ https://ibb.co/fgFYCw
 Configuration->Templates->Template OS Linux->Graphs->Create graph
 https://ibb.co/hEG6Xw
 
-7) After these settings were saved, go to Monitoring->Graphs and select Montlhy bandwith graph for the host that has this Item saved
+7) After these settings were saved, go to Monitoring->Graphs and select Montlhy bandwidth graph for the host that has this Item saved
 https://ibb.co/jGGUkG
 
 # Final note:
