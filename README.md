@@ -33,10 +33,12 @@ https://ibb.co/fgFYCw
 Configuration->Templates->Template OS Linux->Graphs->Create graph
 https://ibb.co/hEG6Xw
 
-7) After tehse settings were save, go to Monitoring->Graphs and select Montlhy bandwith graph for the host that has this Item saved
+7) After these settings were saved, go to Monitoring->Graphs and select Montlhy bandwith graph for the host that has this Item saved
 https://ibb.co/jGGUkG
 
 # Final note:
-a. vnstat usually resets all traffic on 1st day of each month.
-b. You may have issues on collecting data with vnstat. I have encountered such issues with interfaces called p1p1, em1, enp0s25, etc. 
+a) vnstat usually resets all traffic on 1st day of each month.
+b) You may have issues on collecting data with vnstat. I have encountered such issues with interfaces called p1p1, em1, enp0s25, etc. 
+________________________________________________________________________________________________________________________
+
 You can change the interface name and the month start date on which vnstat collects/resets data in /etc/vnstat.conf file
