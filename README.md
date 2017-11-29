@@ -37,5 +37,6 @@ https://ibb.co/hEG6Xw
 https://ibb.co/jGGUkG
 
 # Final note:
-vnstat usually resets all traffic on 1st day of each month
-You may have issues on collecting data with vnstat. I have encountered such issues with interfaces called p1p1, em1, enp0s25, etc. You can change your interface name on which vnstat collects data in /etc/vnstat.conf file
+a. vnstat usually resets all traffic on 1st day of each month.
+b. You may have issues on collecting data with vnstat. I have encountered such issues with interfaces called p1p1, em1, enp0s25, etc. 
+You can change the interface name and the month start date on which vnstat collects/resets data in /etc/vnstat.conf file
