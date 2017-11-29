@@ -6,25 +6,25 @@ In this repository you will find information that will help you to set up Zabbix
 #apt-get -y install vnstal bc
 
 2) Check if the vnstat start working and is collecting data:
-#vnstat -u -i {interface name}
-#vnstat -m
+:#vnstat -u -i {interface name}
+:#vnstat -m
 
 Note:
 Sometimes vnstat needs more time to collect data (on some hosts it has passed ~6 hours before vnstat has started working). On the most of the hosts, vnstat has started to collect data immediately.
 If you have any issues with that, please check /etc/vnstat.conf file
 
 3) Add to your zabbix configuration folder the monthly traffic userparameter (In my case it is /etc/zabbix/zabbix_agentd.conf.d/ folder)
-#vi /etc/zabbix/zabbix_agentd.conf.d/userparameter_monthly.traffic.conf
+:#vi /etc/zabbix/zabbix_agentd.conf.d/userparameter_monthly.traffic.conf
 
 Note:
 Userparameter is called system.monthlybandwidth, you'll need that later on the Zabbix Server Web Interface for Key value and adding a new Item
 
 4) Add to /usr/local/bin the script (zabbix_total_month_bandwidth.sh) that will provide Statistics for zabbix and make this file executable
-#vi /usr/local/bin/zabbix_total_month_bandwidth.sh
-#chmod +x /usr/local/bin/zabbix_total_month_bandwidth.sh
+:#vi /usr/local/bin/zabbix_total_month_bandwidth.sh
+:#chmod +x /usr/local/bin/zabbix_total_month_bandwidth.sh
 
 5) Restart Zabbix agent
-#service zabbix-agent restart
+:#service zabbix-agent restart
 
 # Zabbix Server modifications
 6) Add a new Item and Graph to your Zabbix Server (I have added it to Template OS Linux )
